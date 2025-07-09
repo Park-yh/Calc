@@ -2,7 +2,7 @@ package lv1;
 
 import java.util.Scanner;
 
-public class calc {
+public class App {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int result = 0;
