@@ -19,23 +19,23 @@ public class calc {
 
             // 원하는 사칙연산 입력
             System.out.print("사칙연산 기호를 입력하세요: ");
-            String operator = sc.nextLine();
+            char operator = sc.next().charAt(0);
 
             // 연산
             switch (operator){
-                case "+": //덧셈 계산
+                case '+': //덧셈 계산
                     result = num1 + num2;
                     break;
 
-                case "-": // 뺄셈 계산
+                case '-': // 뺄셈 계산
                     result = num1 - num2;
                     break;
 
-                case "*": //곱셈 계산
+                case '*': //곱셈 계산
                     result = num1 * num2;
                     break;
 
-                case "/": //나눗셈 계산
+                case '/': //나눗셈 계산
                     if(num2 != 0) result = num1 / num2;
                     else {
                         System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다.");
@@ -46,6 +46,7 @@ public class calc {
             System.out.println("결과: " + result);
 
             System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
+            sc.nextLine();
             nextop = sc.nextLine();
         }
         System.out.println("계산기를 종료합니다.");
